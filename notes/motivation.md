@@ -2,6 +2,8 @@
 
 With multiple source and target systems needing to exchange data with each other, each pair of src/tgt with its own integration, becomes complicated. E.g., with 4 src and 6 tgt sys, need 24 integrations.
 
+![](../no_kafka.png)
+
 Integration comes with difficulties:
 * Protocol - how data is transported (TCP, HTTP, FTP, etc.)
 * Data format - how data is parsed (binary, CSV, JSON, etc.)
@@ -9,9 +11,13 @@ Integration comes with difficulties:
 
 In addition, each integration increases connection load on src sys.
 
-Kafka, a messaging system, sits in-between src and tgt sys and decouples data streams and systems. Src sys' data ends up in Kafka, tgt sys source data from Kafka.
+Kafka, a messaging system, sits between src and tgt sys and decouples data streams and systems. Src sys' data ends up in Kafka, tgt sys source data from Kafka.
+
+![](../kafka.png)
 
 Ex:
+
+![](../kafka_ex.png)
 
 ## What is Kafka
 
